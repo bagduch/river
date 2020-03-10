@@ -1,0 +1,17 @@
+.page-container {
+    height: 50vh;
+
+}
+
+.container {
+    height: 100%;
+}
+
+
+@include for-phone-only {
+    .page-container {
+        height: auto;
+
+    }
+
+}

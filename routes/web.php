@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
+});
+
+Route::prefix("/booking")->group(function () {
+    Route::get('', 'BookController@index');
+    Route::post('', 'BookController@store');
+
 });

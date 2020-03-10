@@ -1,0 +1,57 @@
+.booking-item-container {
+    padding-left: 90px;
+    padding-top: 7vh;
+
+
+    .split-bar {
+        position: absolute;
+        left: 0px;
+        border: 1px solid black;
+        width: 83px;
+    }
+
+
+    .item-header {
+        .section-number {
+            letter-spacing: 3.2px;
+            color: rgba(154, 154, 154, 1);
+            text-transform: uppercase;
+            opacity: 1;
+        }
+    }
+
+    .title {
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: $main-secondary-color;
+            text-transform: uppercase;
+            opacity: 1;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    .sub-title {
+        h2 {
+            font-size: 28px;
+        }
+    }
+
+    .item-body {
+        p {
+            font-size: 18px;
+            letter-spacing: 0;
+            color: $main-secondary-color;
+            opacity: 1;
+            height: 15vh;
+            min-height: 200px;
+            overflow: hidden;
+        }
+    }
+
+    .item-footer {
+        position: absolute;
+        bottom: 10vh;
+    }
+}

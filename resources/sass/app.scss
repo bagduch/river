@@ -1,1 +1,43 @@
-//
+// Webpack example
+body {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+}
+@import "default";
+@import '~bootstrap';
+@import '~bootstrap-vue';
+/* Theme components */
+@import "nav";
+@import "hero";
+@import "page";
+@import "content";
+@import "footer";
+@import "bookingitem";
+
+.btn-secondary {
+    background-color: white;
+    color: black
+}
+
+.btn {
+    width: 200px;
+}
+
+.b-form-btn-label-control > .btn {
+    width: auto;
+}

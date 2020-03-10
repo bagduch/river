@@ -1,0 +1,52 @@
+.footer {
+    background: $main-secondary-color;
+    color: $main-color;
+    min-height: 530px;
+    width: 100%;
+    padding-top: 80px;
+
+    p {
+        letter-spacing: 0;
+        color: white;
+        opacity: 0.6;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .footer-button {
+        letter-spacing: 4.2px;
+        color: rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+        opacity: 1;
+        cursor: pointer;
+        border-bottom: 1px solid white;
+        width: 135px;
+        line-height: 3;
+    }
+
+    .menu-title {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    .menu-content {
+        ul {
+            padding-left: 0px;
+
+            li {
+                list-style: none;
+                opacity: 0.6;
+            }
+        }
+
+    }
+
+}
+
+@include for-phone-only {
+    .footer {
+        .footer-button {
+            margin-bottom: 20px;
+        }
+    }
+}
