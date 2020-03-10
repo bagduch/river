@@ -2197,14 +2197,16 @@ __webpack_require__.r(__webpack_exports__);
         name: this.form.name,
         message: this.form.message
       };
-      console.log(form);
+      this.formReset();
       this.$emit("submit-form", form);
     },
     formReset: function formReset() {
       // Reset our form values
-      this.form.name = '';
-      this.form.date = '';
-      this.form.message = ''; // Trick to reset/clear native browser form validation state
+      this.form.name = null;
+      this.form.time = null;
+      this.form.date = null;
+      this.form.message = null;
+      this.$v.$reset(); // Trick to reset/clear native browser form validation state
     }
   }
 });
